@@ -11,8 +11,12 @@ const App = () => {
     <Router>
       <div>
         <HomePage />
+<<<<<<< Updated upstream
         <LoginPage />
         <ChangePasswordPage />
+=======
+        Stashed changes
+>>>>>>> Stashed changes
       </div>
     </Router>
   );
