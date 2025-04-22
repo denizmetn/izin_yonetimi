@@ -3,12 +3,14 @@ import "./App.css";
 import Register from "./components/register";
 import HomePage from "./components/HomePage";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import LoginPage from "./components/LoginPage";
 
 const App = () => {
   return (
     <Router>
       <div>
         <HomePage />
+        <LoginPage />
       </div>
     </Router>
   );

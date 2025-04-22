@@ -6,6 +6,7 @@ import IzinOlustur from "./IzinOlustur";
 import IzinTakvimi from "./IzinTakvimi";
 import IzinOnay from "./IzinOnay";
 import IzinTaleplerim from "./IzinTaleplerim";
+import Dashboard from "./Dashboard";
 
 const items = [
   {
@@ -81,6 +82,13 @@ function HomePage() {
         <aside className="w-64 bg-gray-100 shadow-lg rounded-lg p-4 pt-12">
           <nav className="flex flex-col space-y-4">
             <Link
+              to="dashboard"
+              className="px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-lg hover:bg-gray-300 hover:text-gray-900 transition duration-200"
+            >
+              DASHBOARD
+            </Link>
+
+            <Link
               to="izin-olustur"
               className="px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-lg hover:bg-gray-300 hover:text-gray-900 transition duration-200"
             >
@@ -98,7 +106,7 @@ function HomePage() {
               to="/izin-onay"
               className="px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-lg hover:bg-gray-300 hover:text-gray-900 transition duration-200"
             >
-              İzin Onay Ekranı
+              Onay Bekleyenler
             </Link>
             <Link
               to="/izin_takvimi"
@@ -106,12 +114,27 @@ function HomePage() {
             >
               İzin Takvimi
             </Link>
+
+            <Link
+              to="/PersonelListesi"
+              className="px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-lg hover:bg-gray-300 hover:text-gray-900 transition duration-200"
+            >
+              Personel Listesi
+            </Link>
+
+            <Link
+              to="/Raporlar"
+              className="px-4 py-2 text-sm font-medium text-gray-800 bg-gray-200 rounded-lg hover:bg-gray-300 hover:text-gray-900 transition duration-200"
+            >
+              Raporlar
+            </Link>
           </nav>
         </aside>
 
         <main className="flex-1 p-12 h-full w-full">
           <Routes>
             <Route path="/" element={<AnaEkran />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/izin-olustur" element={<IzinOlustur />} />
             <Route path="/izin-talepleri" element={<IzinTaleplerim />} />
             <Route path="/izin-onay" element={<IzinOnay />} />
