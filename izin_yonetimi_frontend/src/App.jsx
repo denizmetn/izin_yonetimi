@@ -9,6 +9,12 @@ const App = () => {
     <Router>
       <div>
         <HomePage />
+<<<<<<< Updated upstream
+=======
+        <LoginPage />
+
+        <ChangePasswordPage />
+>>>>>>> Stashed changes
       </div>
     </Router>
   );
