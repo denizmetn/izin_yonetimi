@@ -75,6 +75,7 @@ function HomePage() {
           <Dropdown menu={{ items }} placement="bottomLeft">
             <Button>PROFİL</Button>
           </Dropdown>
+          
         </div>
       </header>
 
